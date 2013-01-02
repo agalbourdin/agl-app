@@ -1,0 +1,10 @@
+{
+	"guest": {
+		"resources": [
+
+		],
+		"inherit": [
+
+		]
+	}
+}

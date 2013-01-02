@@ -1,0 +1,19 @@
+{
+	"global": {
+		"theme"   : "default",
+		"timezone": "Europe/Paris"
+	},
+
+	"db": {
+		"engine"  : "",
+		"host"    : "",
+		"name"    : "",
+		"user"    : "",
+		"password": "",
+		"prefix"  : ""
+	},
+
+	"session": {
+		"storage": "file"
+	}
+}

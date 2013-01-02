@@ -1,0 +1,27 @@
+body {
+	margin: 15px;
+	background: #404040;
+	color: whitesmoke;
+}
+h1 {
+	font-size: 1.7em;
+}
+h2 {
+	font-size: 1.1em;
+	border-left: 5px solid orange;
+	padding-left: 10px;
+}
+p {
+	font-size: .8em;
+}
+ul {
+	font-style: italic;
+	font-size: .8em;
+}
+a {
+	text-decoration: underline;
+	color: orange;
+}
+a:hover {
+	text-decoration: none;
+}

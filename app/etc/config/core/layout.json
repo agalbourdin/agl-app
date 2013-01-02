@@ -1,0 +1,30 @@
+{
+	"errors": {
+		"404"   : "errors/404",
+		"static": "error_static.phtml"
+	},
+
+	"template": {
+		"file": "default",
+		"type": "html",
+		"css" : [
+			"normalize.css",
+			"preset.css",
+			"main.css"
+		],
+		"js"  : [
+			"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js",
+			"vendor/modernizr-2.6.2.min.js",
+			"plugins.js",
+			"main.js"
+		]
+	},
+
+	"modules": {
+
+	},
+
+	"blocks": {
+
+	}
+}
