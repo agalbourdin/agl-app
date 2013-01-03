@@ -8,7 +8,7 @@
 #   Kroc Camen: camendesign.com/.htaccess
 #   perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/
 #   Sample .htaccess file of CMS MODx: modxcms.com
-
+#   AGL specific rules
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
@@ -556,11 +556,21 @@ php_value date.timezone "UTC"
   RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
 
-# Environment value used to define multiple configuration files for multiple environments (dev, preprod, prod...).
+# Environment variable used to define multiple JSON configuration files for
+# multiple environments (dev, preprod, prod...).
+#
 # If you set a value, AGL will use it as a prefix to load configuration files.
-# For example, if you set AGL_ENV to "prod", configuration filenames should be prefixed with: "prod_".
+#
+# If you set AGL_ENV to "prod", JSON configuration files should be prefixed
+# with: "prod_". For example: "prod_config.json", "prod_layout.json"...
+#
+# Uncomment to enable.
+#
 # SetEnv AGL_ENV "prod"
 
 # If you use XHProf and want to profile the application, complete the path to your XHProf files here.
+#
+# Uncomment to enable.
+#
 # php_value auto_prepend_file /xhprof_header.php
 # php_value auto_append_file /xhprof_footer.php
