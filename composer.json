@@ -1,0 +1,6 @@
+{
+	"require": {
+		"agl/core": "*"
+	},
+	"minimum-stability": "dev"
+}
