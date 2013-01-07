@@ -14,18 +14,18 @@ Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](
 
 Dependencies are managed through Composer. To install AGL into your application, run:
 
-> php composer.phar install
-
-Your application is ready!
+	php composer.phar install
 
 ## Configuration & Usage
 
-Routes, Layouts, Views, Blocks, Models, ACL, Cache, Session... Learn how to create complete and complex applications with AGL by visiting the documentation:
-
-[**www.agl.io/doc/start**](http://www.agl.io/doc/start)
+Routes, Layouts, Views, Blocks, Models, ACL, Cache, Session...<br>
+Learn how to create complete and complex applications with AGL by visiting the documentation: [**www.agl.io/doc/start**](http://www.agl.io/doc/start)
 
 ## Additional modules
 
-I18n, Password Hashing, Mail, CSS/JS Minification, Cron Jobs... Add more functionalities to your application by installing additional modules in a few minutes:
+I18n, Password Hashing, Mail, CSS/JS Minification, Cron Jobs...<br>
+Add more functionalities to your application by installing additional modules in a few minutes: [**www.agl.io/more/index**](http://www.agl.io/more/index)
 
-[**www.agl.io/more/index**](http://www.agl.io/more/index)
+## More
+
+Learn more about AGL by visiting [**www.agl.io**](http://www.agl.io/)
