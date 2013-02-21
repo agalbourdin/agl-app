@@ -1,2 +1,3 @@
-composer.lock
-./vendor
+/app/var/cache/
+/vendor/
+/composer.lock
