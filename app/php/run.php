@@ -1,5 +1,10 @@
 <?php
 /**
+ * Composer base folder.
+ */
+define('COMPOSER_DIR', 'vendor/');
+
+/**
  * Required constants to initialize AGL.
  *
  * AGL_PATH (string): absolute or relative path to your AGL installation
@@ -14,16 +19,13 @@
  * be displayed. Debug informations will be displayed at the bottom of the
  * pages.
  */
-define('AGL_PATH', 'vendor/agl/core/src/Agl/Core/');
+define('AGL_PATH', COMPOSER_DIR . '/agl/core/src/Agl/Core/');
 define('AGL_CACHE_ENABLED', false);
 define('AGL_DEBUG_MODE', false);
 
 /**
- * Require the Composer Autoloader.
+ * Require Config Loader, Composer Autoloader and AGL boot file.
  */
-require('vendor/autoload.php');
-
-/**
- * Require the AGL boot file.
- */
+require(AGL_PATH . 'ConfigLoader.php');
+require(COMPOSER_DIR . 'autoload.php');
 require(AGL_PATH . 'Bootstrap.php');
