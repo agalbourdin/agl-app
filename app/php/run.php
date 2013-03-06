@@ -24,8 +24,11 @@ define('AGL_CACHE_ENABLED', false);
 define('AGL_DEBUG_MODE', false);
 
 /**
- * Require Config Loader, Composer Autoloader and AGL boot file.
+ * Require Composer Autoloader.
  */
-require(AGL_PATH . 'ConfigLoader.php');
 require(COMPOSER_DIR . 'autoload.php');
+
+/**
+ * Require AGL boot file.
+ */
 require(AGL_PATH . 'Bootstrap.php');
