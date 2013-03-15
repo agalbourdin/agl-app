@@ -19,7 +19,7 @@ define('COMPOSER_DIR', 'vendor/');
  * be displayed. Debug informations will be displayed at the bottom of the
  * pages.
  */
-define('AGL_PATH', COMPOSER_DIR . '/agl/core/src/Agl/Core/');
+define('AGL_PATH', COMPOSER_DIR . 'agl/core/src/Agl/Core/');
 define('AGL_CACHE_ENABLED', false);
 define('AGL_DEBUG_MODE', false);
 
