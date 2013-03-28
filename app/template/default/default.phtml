@@ -28,15 +28,19 @@ $this->addMeta('viewport', array(
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <title><?php echo $this->getTitle() ?></title>
+        <script>
+            var baseUrl    = '<?php echo Url::getBase(false) ?>';
+            var publicUrl  = '<?php echo Url::getPublic('', false) ?>';
+            var skinUrl    = '<?php echo Url::getSkin('', false) ?>';
+            var basePath   = '<?php echo Url::getBase() ?>';
+            var publicPath = '<?php echo Url::getPublic('') ?>';
+            var skinPath   = '<?php echo Url::getSkin('') ?>';
+        </script>
         <?php
         echo $this->getMeta();
         echo $this->getCss();
         echo $this->getJs();
         ?>
-        <script>
-            var baseUrl  = '<?php echo Url::getBase(false) ?>';
-            var basePath = '<?php echo Url::getBase() ?>';
-        </script>
     </head>
     <body class="<?php echo $request->getModule() . ' ' . $request->getModule() . '-' . $request->getView() . ' ' . $request->getModule() . '-' . $request->getView() . '-' . $request->getAction() ?>">
         <!--[if lt IE 7]>
