@@ -1,11 +1,11 @@
 AGL Application
 ===============
 
-Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](http://html5boilerplate.com/) v4.1. This structure include:
+Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](http://html5boilerplate.com/) v4.2.0. This structure include:
 
-* Normalize.css v1.1.0
+* Normalize.css v1.1.1
 * HTML5 Boilerplate CSS
-* jQuery v1.9.0 (loaded via Google CDN with a local fallback)
+* jQuery v1.9.1 (loaded via Google CDN with a local fallback)
 * Modernizr v2.6.2
 * .htaccess optimizations
 * A default home page, a 404 page and a static error page

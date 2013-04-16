@@ -1,6 +1,8 @@
+html, body {
+	background: #404040;
+}
 body {
 	margin: 15px;
-	background: #404040;
 	color: whitesmoke;
 }
 h1 {
