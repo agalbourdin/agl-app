@@ -556,7 +556,7 @@ php_value date.timezone "UTC"
 <IfModule mod_rewrite.c>
   RewriteCond %{REQUEST_FILENAME} !(\.txt)|(\.xml)|(\.ico)|(\.png)$
   RewriteCond %{REQUEST_URI} !/public/ [NC]
-  RewriteRule ^(.*)$ index.php [QSA,L]
+  RewriteRule ^(.*)$ index.php?action=%{REQUEST_METHOD} [QSA,L]
 </IfModule>
 
 # Environment variable used to define multiple JSON configuration files for
@@ -572,7 +572,6 @@ php_value date.timezone "UTC"
 # SetEnv AGL_ENV "prod"
 
 # If you use XHProf and want to profile the application, complete the path to your XHProf files here.
-#
 # Uncomment to enable.
 #
 # php_value auto_prepend_file /xhprof_header.php
