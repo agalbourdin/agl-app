@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# agl/shell must be installed through Composer.
+#
+# If you have changed your Composer "vendor-dir", update the following line.
+#
+source ./vendor/agl/shell/src/agl.sh

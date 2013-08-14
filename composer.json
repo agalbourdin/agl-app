@@ -1,6 +1,7 @@
 {
 	"require": {
-		"agl/core": "*"
+		"agl/core": "*",
+		"agl/shell": "*"
 	},
 	"minimum-stability": "dev",
 	"scripts": {
