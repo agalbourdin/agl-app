@@ -1,5 +1,13 @@
 <?php
 $this->setTitle("Home page");
+
+// Display an alert if app/var is not writable.
+$varDir = APP_PATH . Agl::APP_VAR_DIR;
+if (! is_writable($varDir)) {
+	?>
+	<em><?php echo $varDir ?> is not writable</em>
+	<?php
+}
 ?>
 <h1>Hello World!</h1>
 <h2>This is the default AGL application</h2>

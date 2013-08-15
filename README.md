@@ -14,7 +14,6 @@ Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](
 
 **1.** Give write permissions to the following directories (recursively):
 
-* app/etc/
 * app/var/
 
 **2.** Dependencies are managed through Composer. To install AGL into your application, run:

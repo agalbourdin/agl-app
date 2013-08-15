@@ -27,3 +27,11 @@ a {
 a:hover {
 	text-decoration: none;
 }
+em {
+	color: #404040;
+	font-size: .8em;
+	font-weight: bold;
+	display: block;
+	background: orange;
+	padding: 2px 10px;
+}

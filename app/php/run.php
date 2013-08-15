@@ -5,6 +5,14 @@
 define('COMPOSER_DIR', 'vendor/');
 
 /**
+ * Check if COMPOSER_DIR exists.
+ */
+if (! is_dir(COMPOSER_DIR)) {
+	echo 'Run "php composer.phar install" to install dependencies.';
+	exit;
+}
+
+/**
  * Required constants to initialize AGL.
  *
  * AGL_PATH (string): absolute or relative path to your AGL installation
