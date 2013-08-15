@@ -11,10 +11,10 @@ if (! is_writable($varDir)) {
 ?>
 <h1>Hello World!</h1>
 <h2>This is the default AGL application</h2>
-<p>This application is based on <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> v4.2.0, which include:</p>
+<p>This application is based on <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a> v4.2.0, which includes:</p>
 <ul>
 	<li>Normalize.css v1.1.1</li>
-	<li>HTML5 Boilerplate CSS</li>
+	<li>Default HTML5 Boilerplate CSS</li>
 	<li>jQuery v1.9.1 (loaded via Google CDN with a local fallback)</li>
 	<li>Modernizr v2.6.2</li>
 	<li>.htaccess optimizations</li>
@@ -24,23 +24,19 @@ if (! is_writable($varDir)) {
 	<li>app/template/default/default.phtml (main template structure)</li>
 	<li>app/template/default/views/home/index.phtml (home page)</li>
 </ul>
+<p>Skin files (CSS, Images, JS) are in this directory:</p>
+<ul>
+	<li>public/skin/default/ (main CSS is public/skin/default/css/main.css)</li>
+</ul>
 <p>The location of the error pages are:</p>
 <ul>
 	<li>app/template/default/views/errors/404.phtml (dynamic page, 404 error)</li>
-	<li>public/error_static.phtml (Static page, general error)</li>
-</ul>
-<p>Skin files (CSS, Images, JS) are in this directory:</p>
-<ul>
-	<li>public/skin/default/</li>
+	<li>public/error_static.phtml (static page, general error)</li>
 </ul>
 <p>Configuration files are located in those directories:</p>
 <ul>
-	<li>app/php/run.php (path to AGL, Cache, Log and Debug mode)</li>
-	<li>app/etc/config/ (JSON configuration files for Core and More modules)</li>
+	<li>app/php/run.php (to enable Cache/Debug mode)</li>
+	<li>app/etc/config/</li>
 </ul>
-<h2>Get started</h2>
-<p>Routes, Layouts, Views, Blocks, Models, ACL, Cache, Session...<br>Learn how to create complete and complex applications with AGL by visiting the documentation: <a href="http://www.agl.io/doc/">www.agl.io/doc/</a></p>
-<h2>Additional modules</h2>
-<p>I18n, Password Hashing, Mail, CSS/JS Minification, Cron Jobs...<br>Add more functionalities to your application by installing additional modules in a few minutes: <a href="http://www.agl.io/more/">www.agl.io/more/</a></p>
 <hr>
-<p><a href="http://www.agl.io/">Official Website</a>&nbsp;|&nbsp;<a href="http://www.agl.io/doc/">Documentation</a>&nbsp;|&nbsp;<a href="http://www.agl.io/more/">Additional modules</a>&nbsp;|&nbsp;<a href="https://github.com/agl-php">GitHub</a>
+<p><a href="http://www.agl.io/doc/" target="_blank">Documentation</a>&nbsp;|&nbsp;<a href="http://www.agl.io/more/" target="_blank">Additional modules</a>&nbsp;|&nbsp;<a href="https://github.com/agl-php" target="_blank">GitHub</a>
