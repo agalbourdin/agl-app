@@ -1,42 +1,29 @@
 <?php
 /**
- * Composer base folder.
+ * Enable AGL Cache. Views and Blocks will be cached if configured.
+ * Cache can be saved to memory (with APC or APCu), or to file system.
+ */
+define('AGL_CACHE_ENABLED', false);
+
+/**
+ * Enable AGL Debug mode (display all errors).
+ */
+define('AGL_DEBUG_MODE', false);
+
+/**
+ * Your Composer base folder, with trailing slash (default value is "vendor/").
  */
 define('COMPOSER_DIR', 'vendor/');
 
 /**
- * Check if COMPOSER_DIR exists.
+ * You shouldn't have to edit following lines.
  */
 if (! is_dir(COMPOSER_DIR)) {
 	echo 'Run "php composer.phar install" to install dependencies.';
 	exit;
 }
 
-/**
- * Required constants to initialize AGL.
- *
- * AGL_PATH (string): absolute or relative path to your AGL installation
- * (Agl/Core directory).
- *
- * AGL_CACHE_ENABLED (bool): enable the Cache. Configuration files will
- * automatically be cached. Views and Blocks will be cached if configured.
- * Cache is saved to memory if APC is available, or to file system
- * (in app/var/cache, app/var must be writable).
- *
- * AGL_DEBUG_MODE (bool): enable the Debug mode. PHP errors and exceptions will
- * be displayed. Debug informations will be displayed at the bottom of the
- * pages.
- */
 define('AGL_PATH', COMPOSER_DIR . 'agl/core/src/Agl/Core/');
-define('AGL_CACHE_ENABLED', false);
-define('AGL_DEBUG_MODE', false);
 
-/**
- * Require Composer Autoloader.
- */
 require(COMPOSER_DIR . 'autoload.php');
-
-/**
- * Require AGL boot file.
- */
 require(AGL_PATH . 'Bootstrap.php');
