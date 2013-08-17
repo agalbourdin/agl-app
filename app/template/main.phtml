@@ -41,6 +41,8 @@ $this->addMeta('viewport', array(
         echo $this->getCss();
         echo $this->getJs();
         ?>
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo Url::getSkin('images/favicon.ico') ?>" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo Url::getSkin('images/apple-touch-icon-144x144-precomposed.png') ?>" />
     </head>
     <body class="<?php echo $request->getModule() . ' ' . $request->getModule() . '-' . $request->getView() . ' ' . $request->getModule() . '-' . $request->getView() . '-' . $request->getAction() ?>">
         <!--[if lt IE 7]>

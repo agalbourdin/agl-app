@@ -554,7 +554,7 @@ FileETag None
 php_value date.timezone "UTC"
 
 <IfModule mod_rewrite.c>
-  RewriteCond %{REQUEST_FILENAME} !(\.txt)|(\.xml)|(\.ico)|(\.png)$
+  RewriteCond %{REQUEST_FILENAME} !(\.txt)|(\.xml)$
   RewriteCond %{REQUEST_URI} !/public/ [NC]
   RewriteRule ^(.*)$ index.php?action=%{REQUEST_METHOD} [QSA,L]
 </IfModule>
