@@ -1,6 +1,9 @@
 AGL Application
 ===============
 
+[![Latest Stable Version](https://poser.pugx.org/agl/core/v/stable.png)](https://packagist.org/packages/agl/core)
+[![Build Status](https://travis-ci.org/agl-php/agl-core.png)](https://travis-ci.org/agl-php/agl-core)
+
 Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](http://html5boilerplate.com/) v4.2.0. This structure include:
 
 * Normalize.css v1.1.1
@@ -12,22 +15,16 @@ Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](
 
 ## Installation
 
-**1.** Dependencies are managed through Composer. To install AGL into your application, run:
+**1.** Download this repository.
+
+**2.** Dependencies are managed through [Composer](http://getcomposer.org/). Run the following command in the root of your AGL application:
 
 	php composer.phar install
 
-Your application is now ready and can be opened in your browser.
+**3.** Give write permissions to **app/var**.
 
-**2.** Give write permissions to the following directories (recursively):
-
-* app/var/
+**Your application is now ready and can be opened in your browser!**
 
 ## Get started
 
-Routes, Layouts, Views, Blocks, Models, ACL, Cache, Session...<br>
-Learn how to create complete and complex applications with AGL by visiting the documentation: [**www.agl.io/doc/**](http://www.agl.io/doc/)
-
-## Additional modules
-
-I18n, Password Hashing, Mail, CSS/JS Minification, Cron Jobs...<br>
-Add more functionalities to your application by installing additional modules in a few minutes: [**www.agl.io/more/**](http://www.agl.io/more/)
+Learn how to create AGL applications by visiting [the documentation](http://agl.io/doc/).
