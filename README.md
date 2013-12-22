@@ -17,9 +17,7 @@ Base structure to create AGL applications. HTML5 ready with [HTML5 Boilerplate](
 
 **1.** Download this repository.
 
-**2.** Dependencies are managed through [Composer](http://getcomposer.org/). Run the following command in the root of your AGL application:
-
-	php composer.phar install
+**2.** Dependencies are managed through [Composer](http://getcomposer.org/). Run `composer install` in the root of your AGL application.
 
 **3.** Give write permissions to **app/var**.
 
