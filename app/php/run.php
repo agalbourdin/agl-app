@@ -19,7 +19,7 @@ define('COMPOSER_DIR', 'vendor/');
  * You shouldn't have to edit following lines.
  */
 if (! is_dir(COMPOSER_DIR)) {
-	echo 'Run "php composer.phar install" to install dependencies.';
+	echo "Composer dependencies are not installed.";
 	exit;
 }
 
