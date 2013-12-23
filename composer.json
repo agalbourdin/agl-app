@@ -4,8 +4,7 @@
 	},
 	"minimum-stability": "dev",
 	"scripts": {
-        "post-package-install": [
-            "Agl\\Core\\Composer::postPackageInstall"
-        ]
+        "post-package-install": "Agl\\Core\\Composer::postPackageInstall",
+        "post-package-update": "Agl\\Core\\Composer::postPackageInstall"
     }
 }
