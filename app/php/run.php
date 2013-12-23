@@ -25,5 +25,8 @@ if (! is_dir(COMPOSER_DIR)) {
 
 define('AGL_PATH', COMPOSER_DIR . 'agl/core/src/Agl/Core/');
 
-require(COMPOSER_DIR . 'autoload.php');
+if (file_exists(COMPOSER_DIR . 'autoload.php')) {
+    require(COMPOSER_DIR . 'autoload.php');
+}
+
 require(AGL_PATH . 'Bootstrap.php');

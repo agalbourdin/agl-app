@@ -1,8 +1,10 @@
 <?php
+/**
+ * Initialize AGL.
+ */
 require('./app/php/run.php');
 
-if (! CLI) {
-    exit;
-}
-
-require(COMPOSER_DIR . 'agl/cli/src/Agl/Cli/App.php');
+/**
+ * Initialize CLI Application.
+ */
+require(COMPOSER_DIR . 'agl/cli/src/Agl/Cli/Bootstrap.php');
