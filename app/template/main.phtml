@@ -1,15 +1,15 @@
 <?php
 $request = Agl::getRequest();
 
+$this->addMeta('charset', array(
+    'charset' => 'utf-8'
+));
+
 $this->setTitlePrefix("AGL Application");
 $this->setTitleSeparator(' | ');
 
 $this->setDescription("Meta description");
 $this->setKeywords("Meta keywords");
-
-$this->addMeta('charset', array(
-    'charset' => 'utf-8'
-));
 
 $this->addMeta('http-equiv', array(
     'http-equiv' => 'X-UA-Compatible',
@@ -25,9 +25,12 @@ $this->addMeta('viewport', array(
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/"> <!--<![endif]-->
     <head>
         <title><?php echo $this->getTitle() ?></title>
+        <?php
+        echo $this->getMeta();
+        ?>
         <script>
             var baseUrl    = '<?php echo Url::getBase(false) ?>';
             var publicUrl  = '<?php echo Url::getPublic('', false) ?>';
@@ -37,7 +40,6 @@ $this->addMeta('viewport', array(
             var skinPath   = '<?php echo Url::getSkin('') ?>';
         </script>
         <?php
-        echo $this->getMeta();
         echo $this->getCss();
         echo $this->getJs();
         ?>
