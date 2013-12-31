@@ -9,7 +9,6 @@ $this->setTitlePrefix("AGL Application");
 $this->setTitleSeparator(' | ');
 
 $this->setDescription("Meta description");
-$this->setKeywords("Meta keywords");
 
 $this->addMeta('http-equiv', array(
     'http-equiv' => 'X-UA-Compatible',
@@ -43,19 +42,12 @@ $this->addMeta('viewport', array(
         echo $this->getCss();
         echo $this->getJs();
         ?>
-        <link rel="shortcut icon" type="image/x-icon" href="<?php echo Url::getSkin('images/favicon.ico') ?>" />
-        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo Url::getSkin('images/apple-touch-icon-precomposed.png') ?>" />
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo Url::getSkin('img/favicon.ico') ?>" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo Url::getSkin('img/apple-touch-icon-precomposed.png') ?>" />
     </head>
     <body class="<?php echo $request->getModule() . ' ' . $request->getModule() . '-' . $request->getView() . ' ' . $request->getModule() . '-' . $request->getView() . '-' . $request->getAction() ?>">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <?php
-        echo $this->getView();
-        ?>
-
-        <script>window.jQuery || document.write('<script src="<?php echo Url::getSkin('js/vendor/jquery-1.10.2.min.js') ?>"><\/script>')</script>
+        <?php echo $this->getView() ?>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

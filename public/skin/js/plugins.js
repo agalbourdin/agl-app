@@ -1,3 +1,6 @@
+// jQuery local fallback
+window.jQuery || document.write('<script src="' + skinPath + 'js/vendor/jquery-1.10.2.min.js"><\/script>');
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
