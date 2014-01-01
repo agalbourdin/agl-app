@@ -1,8 +1,8 @@
-html, body {
+body {
 	background: #404040;
 	color: #e77e23;
 	font-family: Verdana, Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	text-align: center;
 }
 div {
@@ -11,7 +11,7 @@ div {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	margin: -70px 0 0;
+	margin-top: -70px;
 }
 a {
 	text-decoration: underline;

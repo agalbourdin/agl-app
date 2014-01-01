@@ -1,14 +1,12 @@
 <?php
 $request = Agl::getRequest();
 
-$this->addMeta('charset', array(
-    'charset' => 'utf-8'
-));
-
 $this->setTitlePrefix("AGL Application");
 $this->setTitleSeparator(' | ');
 
-$this->setDescription("Meta description");
+$this->addMeta('charset', array(
+    'charset' => 'utf-8'
+));
 
 $this->addMeta('http-equiv', array(
     'http-equiv' => 'X-UA-Compatible',
@@ -19,6 +17,8 @@ $this->addMeta('viewport', array(
     'name'    => 'viewport',
     'content' => 'width=device-width, initial-scale=1'
 ));
+
+$this->setDescription("This is the default AGL application.");
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -45,7 +45,7 @@ $this->addMeta('viewport', array(
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo Url::getSkin('img/favicon.ico') ?>" />
         <link rel="apple-touch-icon" sizes="144x144" href="<?php echo Url::getSkin('img/apple-touch-icon-precomposed.png') ?>" />
     </head>
-    <body class="<?php echo $request->getModule() . ' ' . $request->getModule() . '-' . $request->getView() . ' ' . $request->getModule() . '-' . $request->getView() . '-' . $request->getAction() ?>">
+    <body class="<?php echo $request->getModule() . ' ' . $request->getView() . ' ' . $request->getAction() ?>">
 
         <?php echo $this->getView() ?>
 
