@@ -553,32 +553,39 @@ FileETag None
 # </IfModule>
 
 # ----------------------------------------------------------------------
-# AGL specific rules
+# AGL Specific Rules.
 # ----------------------------------------------------------------------
 
-# Default timezone to UTC (all dates will be saved in the database using this timezone)
-php_value date.timezone "UTC"
+# Environment variable used to define multiple configuration files for
+# multiple environments (dev, preprod, prod...).
+#
+# If you set AGL_ENV to "prod", configuration files prefixed with "prod_" will
+# be loaded. For example: "prod_main.php". If the prefixed file doesn't exists,
+# AGL will try to load the non prefixed version.
+#
+SetEnv AGL_ENV ""
 
+# If you use XHProf and want to profile the application, complete the path to
+# your XHProf files here.
+#
+# php_value auto_prepend_file /xhprof_header.php
+# php_value auto_append_file /xhprof_footer.php
+
+# ----------------------------------------------------------------------
+# You souldn't have to edit the following lines.
+# ----------------------------------------------------------------------
+
+# Default timezone to UTC (all dates saved to database will use this timezone).
+<IfModule mod_php5.c>
+    php_value date.timezone "UTC"
+</IfModule>
+
+# Some hosts use this environment variable to disable Magic Quotes.
+SetEnv MAGIC_QUOTES 0
+
+# Rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteCond %{REQUEST_FILENAME} !(\.txt)|(\.xml)$
   RewriteCond %{REQUEST_URI} !/public/ [NC]
   RewriteRule ^(.*)$ index.php?action=%{REQUEST_METHOD} [QSA,L]
 </IfModule>
-
-# Environment variable used to define multiple JSON configuration files for
-# multiple environments (dev, preprod, prod...).
-#
-# If you set a value, AGL will use it as a prefix to load configuration files.
-#
-# If you set AGL_ENV to "prod", JSON configuration files should be prefixed
-# with: "prod_". For example: "prod_config.json", "prod_layout.json"...
-#
-# Uncomment to enable.
-#
-# SetEnv AGL_ENV "prod"
-
-# If you use XHProf and want to profile the application, complete the path to your XHProf files here.
-# Uncomment to enable.
-#
-# php_value auto_prepend_file /xhprof_header.php
-# php_value auto_append_file /xhprof_footer.php
