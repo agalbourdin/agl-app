@@ -23,7 +23,7 @@ if (! is_dir(COMPOSER_DIR)) {
 	exit;
 }
 
-define('AGL_PATH', COMPOSER_DIR . 'agl/core/src/Agl/Core/');
+define('AGL_PATH', COMPOSER_DIR . 'agl/core/src/');
 
 if (file_exists(COMPOSER_DIR . 'autoload.php')) {
     require(COMPOSER_DIR . 'autoload.php');
