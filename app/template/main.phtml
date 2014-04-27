@@ -20,11 +20,8 @@ $this->addMeta('viewport', array(
 
 $this->setDescription("This is the default AGL application.");
 ?>
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js">
     <head>
         <title><?php echo $this->getTitle() ?></title>
         <?php
@@ -43,11 +40,13 @@ $this->setDescription("This is the default AGL application.");
         echo $this->getJs();
         ?>
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo Url::getSkin('img/favicon.ico') ?>" />
-        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo Url::getSkin('img/apple-touch-icon-precomposed.png') ?>" />
+        <link rel="apple-touch-icon" href="<?php echo Url::getSkin('img/apple-touch-icon-precomposed.png') ?>" />
     </head>
     <body class="<?php echo $request->getModule() . ' ' . $request->getView() . ' ' . $request->getAction() ?>">
 
         <?php echo $this->getView() ?>
+
+        <?php echo $this->getJs(true) ?>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
