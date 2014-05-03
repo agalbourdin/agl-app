@@ -3,6 +3,7 @@ $request = Agl::getRequest();
 
 $this->setTitlePrefix("AGL Application");
 $this->setTitleSeparator(' | ');
+$this->setDescription("This is the default AGL application.");
 
 $this->addMeta('charset', array(
     'charset' => 'utf-8'
@@ -18,7 +19,14 @@ $this->addMeta('viewport', array(
     'content' => 'width=device-width, initial-scale=1'
 ));
 
-$this->setDescription("This is the default AGL application.");
+$this->addCss('normalize.css');
+$this->addCss('preset.css');
+$this->addCss('main.css');
+
+$this->addJs('vendor/modernizr-2.6.2.min.js');
+$this->addJs('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', true);
+$this->addJs('plugins.js', true);
+$this->addJs('main.js', true);
 ?>
 <!doctype html>
 <html class="no-js">
