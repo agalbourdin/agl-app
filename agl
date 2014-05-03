@@ -7,4 +7,4 @@ require('./app/php/run.php');
 /**
  * Initialize CLI Application.
  */
-require(COMPOSER_DIR . 'agl/cli/src/Agl/Cli/Bootstrap.php');
+require(COMPOSER_DIR . 'agl/cli/src/Bootstrap.php');
